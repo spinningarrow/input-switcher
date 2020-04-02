@@ -1,3 +1,3 @@
 # Input Switcher
 
-Switches on and off audio inputs.
+Switches on and off relay-controlled audio inputs.
