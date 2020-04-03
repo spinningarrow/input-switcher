@@ -24,11 +24,11 @@ int switchInput(String command) {
         digitalWrite(input1,HIGH);
         return 1;
     }
-    else if (command=="2") {
+
+    if (command=="2") {
         digitalWrite(input2,HIGH);
         return 2;
     }
-    else {
-        return -1;
-    }
+
+    return -1;
 }
