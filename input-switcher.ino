@@ -6,6 +6,7 @@ void setup() {
    pinMode(input2, OUTPUT);
 
    Particle.function("led",switchInput);
+   Particle.function("input",switchInput);
 
    digitalWrite(input1, LOW);
    digitalWrite(input2, LOW);
