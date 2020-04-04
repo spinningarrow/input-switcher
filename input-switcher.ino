@@ -10,6 +10,10 @@ void setup() {
 
    digitalWrite(input1, LOW);
    digitalWrite(input2, LOW);
+
+   RGB.control(true);
+   RGB.brightness(4);
+   RGB.control(false);
 }
 
 void loop() {
