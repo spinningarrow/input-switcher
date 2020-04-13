@@ -65,7 +65,7 @@ int switchInput(String command) {
         return 4;
     }
 
-    ledYellow();
+    ledOff();
     return 0;
 }
 
