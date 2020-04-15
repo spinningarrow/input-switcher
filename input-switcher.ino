@@ -7,6 +7,8 @@ int red = A0;
 int green = A1;
 int blue = A2;
 
+String currentInput = "0";
+
 void setup() {
    pinMode(input1, OUTPUT);
    pinMode(input2, OUTPUT);
@@ -18,6 +20,7 @@ void setup() {
    pinMode(blue, OUTPUT);
 
    Particle.function("input", switchInput);
+   Particle.variable("currentInput", currentInput);
 
    digitalWrite(input1, LOW);
    digitalWrite(input2, LOW);
@@ -40,6 +43,8 @@ int switchInput(String command) {
     digitalWrite(input2, LOW);
     digitalWrite(input3, LOW);
     digitalWrite(input4, LOW);
+
+    currentInput = command;
 
     if (command == "1") {
         digitalWrite(input1, HIGH);
